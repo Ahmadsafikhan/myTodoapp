@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffba7d;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+#container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffe6d0;
+  padding: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+}
+#todoInput {
+  margin-bottom: 10px;
+  padding: 10px 45px 10px 10px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  width: 50%;
+}
+
+#addBtn {
+  margin-bottom: 10px;
+  background-color: rgb(245 129 40);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+#searchInput {
+  margin-bottom: 10px;
+  padding: 10px 45px 10px 10px;
+  width: 50%;
+  border: 1px solid orange;
+  border-radius: 5px;
+}
+.task {
+  padding: 15px 8px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#todolist {
+  padding-inline-start: 0px;
+}
+
+.list:checked {
+  text-decoration: line-through;
+}
+.completeBtn {
+  /* margin-bottom: 10px; */
+  background-color: rgb(245, 129, 40);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+}
+.deleteBtn {
+  /* margin-bottom: 10px; */
+  background-color: white;
+  color: rgb(245 129 40);
+  border: 1px solid rgb(245 129 40);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.sectionTask {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.taskText {
+  display: inline-block;
+  max-width: 59%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* @media (min-width: 300px) {
+  #container {
+    max-width: 250px;
+  }
+} */
+/* 
+@media (min-width: 600px) {
+  #container {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 800px) {
+  #container {
+    max-width: 700px;
+  }
+} */
