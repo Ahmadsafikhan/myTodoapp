@@ -62,6 +62,9 @@ function addTask(taskText) {
   //       taskItem.parentNode.removeChild(taskItem);
   //     }
   //   });
+;
+  const taskTextElement = newTask.querySelector(".taskText");
+
   const deleteBtn = newTask.querySelector(".deleteBtn");
   deleteBtn.addEventListener("click", function () {
     const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
@@ -75,9 +78,12 @@ function addTask(taskText) {
   });
 
   const completeBtn = newTask.querySelector(".completeBtn");
-  completeBtn.addEventListener("click", function (event) {
-    event.stopPropagation();
-    const taskTextElement = newTask.querySelector(".taskText");
+  completeBtn.addEventListener("click", function () {
     taskTextElement.classList.toggle("completed");
+    if (taskTextElement.classList.contains("completed")) {
+      completeBtn.textContent = "Uncomplete";
+    } else {
+      completeBtn.textContent = "Complete";
+    }
   });
 }

@@ -1,7 +1,10 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #ffba7d;
-  padding: 20px;
+  box-sizing: border-box;
+  padding: 50px;
+  margin: 0;
+
 }
 
 ul {
@@ -10,8 +13,8 @@ ul {
 }
 
 #container {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 60px auto;
   background-color: #ffe6d0;
   padding: 20px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -44,8 +47,18 @@ h1 {
   color: white;
   padding: 10px 20px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid transparent; /* Add transparent border */
+  box-sizing: border-box;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s; /* Add border-color transition */
 }
+
+#addBtn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(245 129 40);
+  border-color: orange; /* Add border color on hover */
+}
+
 
 #searchInput {
   margin-bottom: 10px;
@@ -69,20 +82,37 @@ h1 {
   text-decoration: line-through;
 }
 .completeBtn {
-  /* margin-bottom: 10px; */
-  background-color: rgb(245, 129, 40);
+  margin-bottom: 10px;
+  background-color: rgb(245 129 40);
   color: white;
   padding: 10px 20px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid transparent; /* Add transparent border */
+  box-sizing: border-box;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s; /* Add border-color transition */
 }
-.deleteBtn {
-  /* margin-bottom: 10px; */
+
+.completeBtn:hover {
+  cursor: pointer;
   background-color: white;
   color: rgb(245 129 40);
-  border: 1px solid rgb(245 129 40);
+  border-color: orange; /* Add border color on hover */
+}
+.deleteBtn {
+  margin-bottom: 10px;
+  background-color: white;
+  color: rgb(245 129 40);
   padding: 10px 20px;
   border-radius: 10px;
+  border: 1px solid orange; /* Add transparent border */
+  box-sizing: border-box;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s; /* Add border-color transition */
+}
+.deleteBtn:hover {
+  cursor: pointer;
+  background-color: rgb(245 129 40);
+  color: white;
+  border-color: transparent; /* Add border color on hover */
 }
 .sectionTask {
   display: flex;
